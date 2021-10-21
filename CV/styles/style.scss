@@ -1,0 +1,207 @@
+$red: #FF8A8A;
+$green: #88FFE2;
+$magenta: #B981FF;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    color: #fff;
+    font-family: Fira Code;
+}
+
+.title{
+    font-weight: Medium;
+    font-size: 36px;    
+    hr{
+        outline: none;
+        background-color: none;
+        width: 70px;
+        border: 1px solid #fff;
+        margin: 0 auto;
+        margin-top: 5px
+    }
+}
+
+.subtitle{
+    font-weight: regular;
+    font-size: 13px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    width: 94.6%;
+    margin: 0 auto;
+    header{
+        padding: 7px 0;
+    }
+    .main{
+        min-height: 4750px;
+        .block{
+            margin-bottom: 230px;
+        }
+//--HELLO-SLIDE------------------------------
+        .hello{
+            height: 390px;           
+            margin-top: 50px;
+            .hello-logo{
+                img{
+                    border-radius: 130px;
+                }
+            }
+            .hello-title{
+                text-align: center;
+                .main__title{
+                    font-weight: bold;
+                    font-size: 36px;
+                }
+            }
+            .hello-subtitle{
+                text-align: center;
+                .hello__subtitle{
+                    font-family: Fira Code;
+                    font-weight: regular;
+                    font-size: 13px;
+                }
+            }
+        } 
+//--ABOUEME-SLIDE------------------------------           
+        .aboutMe{
+            .aboutMe-title{
+                margin-bottom: 80px;
+            }   
+            // height: 225px;
+            text-align: center;
+            .aboutMe-subtitle{
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+//--ABOUEME-SLIDE------------------------------           
+        .mySkills{
+            .mySkills-title {
+                margin-bottom: 80px;
+            }   
+            // height: 810px;
+            .mySkills-block{                
+                .mySkill-item{
+                    text-align: center;
+                    margin-bottom: 40px;
+                    .preTitle{
+                        margin-bottom: 30px;
+                        font-weight: medium;
+                    }
+                }
+            }
+        } 
+//--PROJECTS-SLIDE------------------------------                                     
+        .projects{
+            
+            .projects-title{
+                margin-bottom: 80px;
+                
+            }            
+            min-height: 1500px;
+            .projects-block{
+                .work{
+                    margin-bottom: 50px;                        
+                    text-align: center;
+                    .preTitle{
+                        margin-bottom: 5%;
+                    }
+                    .nexTitle{
+                        margin-top: 2%;
+                    }
+                }
+                .projects-work2{
+                    img{border: 1px solid rgb(246, 246, 126);}
+                }
+                .projects-work4{
+                    img{border: 1px solid rgb(255, 255, 255);}
+                }
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+//--REVIEW-SLIDE------------------------------
+        .review{            
+            height: 500px;
+            textarea{
+                height: 255px;
+                width: 350px;
+                padding: 12px 20px;
+                border: none;
+                background-color: #0D0D0D;
+                color: white;
+                outline: none;
+                resize: none;
+                font-family: Fira Code;
+                font-weight: regular;
+                font-size: 13px;
+            }
+            button{
+                outline: none;
+                border: 1px solid #fff;
+                height: 40px;
+                width: 160px;
+                background-color: #000000;
+                color: #fff;
+                font-family: Fira Code;
+                font-size: 13px;
+                font-weight: regular;
+            }
+        }
+    }
+//--FOOTER------------------------------
+    footer{
+        .contacts{
+            text-align: center;
+            .contacts-block{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 320px;
+                margin: 100px auto;
+            }
+        }
+        margin-bottom: 150px;
+    }
+}
+
+@media (min-width: 772px) {
+    .main{
+        padding-top: 70px;
+    }
+    .hello{
+        margin-top: 150px;
+    }
+    .mySkills-block{
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+        .mySkills-programs{
+            margin-left:20px;
+        }
+    }
+    .container{
+        width:60%;
+    }
+}
+@media (min-width: 400) {
+    .main{
+        height: auto;
+    }
+}
