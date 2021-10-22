@@ -29,8 +29,8 @@
                     <p class="hello__subtitle subtitle">Hello. This is my portifilio where I will post my design and programming projects  </p>
                 </div>
             </div>
-            <div class="aboutMe title block flex">
-                <div class="aboutMe-title">
+            <div class="aboutMe block flex">
+                <div class="aboutMe-title title">
                     <p class="aboutMe__title">About Me</p>
                     <hr>
                 </div>
@@ -176,8 +176,9 @@
                     </a>
                 </div>
             </div>
-        </footer>
-        
+        </footer>        
     </div>
+    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -14,6 +14,13 @@ body {
 .title {
   font-weight: Medium;
   font-size: 36px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.show{
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
 }
 .title hr {
   outline: none;
@@ -47,11 +54,13 @@ body {
   min-height: 4750px;
 }
 .container .main .block {
-  margin-bottom: 230px;
+  margin-bottom: 330px;
 }
+
+
 .container .main .hello {
   height: 390px;
-  margin-top: 50px;
+  margin-top: 120px;
 }
 .container .main .hello .hello-logo img {
   border-radius: 130px;
@@ -155,14 +164,18 @@ body {
 .container .main .review button {
   outline: none;
   border: 1px solid #fff;
-  height: 40px;
-  width: 160px;
+  height: 50px;
+  width: 190px;
   background-color: #000000;
   color: #fff;
   font-family: Fira Code;
-  font-size: 13px;
-  font-weight: regular;
-
+  font-size: 13px;  
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.shadowBtn{
+  box-shadow: 10px 10px 0 #B981FF;
+  border: none;
 }
 .container footer {
   margin-bottom: 150px;
@@ -177,6 +190,8 @@ body {
   width: 320px;
   margin: 100px auto;
 }
+
+
 
 @media (min-width: 772px) {
   .main {
